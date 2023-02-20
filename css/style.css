@@ -159,7 +159,44 @@ main {
     padding: 10px 15px;
     border-radius: 50%;
 }
+/* PARTNER */
+#partner h3{
+    color: var(--bg-purple);
+    font-size: 2rem;
+    margin: 15px;
+}
+#partner h5{
+    font-size: 1.5rem;
+    letter-spacing:1.6px;
 
+}
+.card-partner{
+    background-color: var(--bg-purple);
+    border-radius: 40px;
+    padding: 20px;
+    color: var(--bg-main-white);
+    margin: 30px;
+}
+.box-partner{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.box-partner img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
 /* FOOTER */
 footer {
     background-color: var(--dark-color);
