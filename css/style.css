@@ -21,6 +21,7 @@ body{
 }
 ul{
     list-style: none;
+    display: none;
 }
 
 /* TOOLS */
@@ -42,6 +43,7 @@ ul{
 p{
     line-height: 1.5rem;
     padding: 1.3rem;
+    
 }
 /* BOTTONI */
 .btn{
@@ -74,18 +76,28 @@ main{
 .card{
     background-color: var(--bg-card);
     border-radius: 20px;
-    margin-bottom: 10px;
-    padding: 20px 20px 0px 20px;
+    margin-bottom: 30px;
+    padding: 10px 10px 0px 10px;
 }
-
+.card .btn{
+    margin: 50px;
+}
 .card img{
     width: 180px;
+    margin-bottom: 0;
 }
 .card h3{
     color: var(--bg-navbar);
+    text-align: left;
+    margin-left: 20px;
 }
-.color p{
+.card p{
     color: var(--text-gray);
+    text-align: left;
+}
+.card i{
+    font-size: 2.5rem;
+    color: var(--bg-navbar);
 }
 /* FOOTER */
 footer{
