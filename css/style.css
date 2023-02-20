@@ -57,13 +57,13 @@ p {
     color: var(--bg-main-white);
     text-decoration: none;
     display: block;
+    width: fit-content;
 }
 .btn-blue{
     background-color: var(--bg-navbar);
 }
 .btn-purple{
     background-color: var(--bg-purple);
-    width: 150px;
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: .2rem;
@@ -228,6 +228,27 @@ main {
     padding: 5px;
     text-align: left;
 }
+
+/* PERSOLAN INFO */
+.personal-info{
+    padding: 40px;
+}
+.personal-info h2{
+    color: var(--bg-purple);
+    margin-left: 15px;
+    padding: 10px;
+}
+.personal-info .box-partner{
+    margin-left: 15px;
+}
+.personal-info p{
+    word-spacing: 0.5rem;
+}
+
+
+
+
+
 /* FOOTER */
 
 
