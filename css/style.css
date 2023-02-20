@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Color styles */
+--bg-navbar: #0084FD;
+--bg-purple: #9792E4;
+--bg-card: #B5DDFF;
+--bg-main-white: #FFFFFF;
+--text-gold: #FDC15F;
+
+}
