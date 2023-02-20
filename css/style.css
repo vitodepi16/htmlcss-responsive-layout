@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 :root{
     /* Color styles */
@@ -10,5 +11,7 @@
 --bg-card: #B5DDFF;
 --bg-main-white: #FFFFFF;
 --text-gold: #FDC15F;
-
+}
+body{
+     font-family: 'PT Sans', sans-serif;
 }
