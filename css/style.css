@@ -23,10 +23,10 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-ul {
+/* li {
     list-style: none;
     display: none;
-}
+} */
 
 /* TOOLS */
 .container {
@@ -59,19 +59,16 @@ p {
     display: block;
     width: fit-content;
 }
-
-.btn-blue {
+.btn-blue{
     background-color: var(--bg-navbar);
 }
-
-.btn-purple {
+.btn-purple{
     background-color: var(--bg-purple);
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: .2rem;
 
 }
-
 /* HEADER */
 header {
     background-color: var(--bg-navbar);
@@ -136,8 +133,7 @@ main {
 #planning img {
     width: 100%;
 }
-
-#planning h2 {
+#planning h2{
     text-align: left;
     margin-left: 10px;
     font-size: 2rem;
@@ -151,16 +147,15 @@ main {
     padding: 40px;
 }
 
-.developement img {
+.developement img{
     width: 100%;
 }
 
-.developement p {
+.developement p{
     line-height: 1.8rem;
     padding: 10px;
 }
-
-.developement h3 {
+.developement h3{
     font-size: 1rem;
     padding: 20px;
 }
@@ -170,42 +165,37 @@ main {
     padding: 10px 15px;
     border-radius: 50%;
 }
-
 /* PARTNER */
-#partner h3 {
+#partner h3{
     color: var(--bg-purple);
     font-size: 2rem;
     margin: 15px;
 }
-
-#partner h5 {
+#partner h5{
     font-size: 1.5rem;
-    letter-spacing: 1.6px;
+    letter-spacing:1.6px;
 
 }
-
-.card-partner {
+.card-partner{
     background-color: var(--bg-purple);
     border-radius: 40px;
     padding: 20px;
     color: var(--bg-main-white);
     margin: 30px;
 }
-
-.box-partner {
+.box-partner{
     display: inline-block;
     height: 100px;
     width: 100px;
     border-radius: 100%;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-
-.box-partner img {
+.box-partner img{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -217,49 +207,46 @@ main {
 
 /* BENEFITS */
 
-#benefit h2 {
+#benefit h2{
     color: var(--bg-main-white);
     padding: 50px;
 }
 
-.card-benefits {
+.card-benefits{
     background-color: var(--bg-main-white);
     color: var(--text-gray);
     border-radius: 40px;
     padding: 20px;
     margin-top: 40px;
 }
-
-.n-benefit {
-    font-size: 3rem;
-    ;
-
+.n-benefit{
+    font-size:  3rem;;
+   
 }
-
-.n-benefit,
-h3 {
+.n-benefit, h3{
     color: var(--bg-purple);
     padding: 5px;
     text-align: left;
 }
 
 /* PERSOLAN INFO */
-.personal-info {
+.personal-info{
     padding: 40px;
 }
-
-.personal-info h2 {
+.personal-info h2{
     color: var(--bg-purple);
     margin-left: 15px;
     padding: 10px;
 }
-
-.personal-info .box-partner {
+.personal-info .box-partner{
     margin-left: 15px;
 }
-
-.personal-info p {
+.personal-info p{
     word-spacing: 0.5rem;
+}
+.personal-info .btn{
+    width: fit-content;
+
 }
 
 
@@ -276,8 +263,8 @@ footer {
 
 
 /* MEDIA */
-@media screen and (max-width:374px) {
-    ul {
+@media screen and (min-width:374px) {
+    li {
         display: none;
     }
 
