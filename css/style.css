@@ -29,8 +29,11 @@ body {
 ul{
     list-style: none;
 }
-.burger{
-
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap: 10px;
 }
 /* TOOLS */
 .container {
@@ -49,7 +52,6 @@ p {
     line-height: 1.5rem;
     padding: 1.3rem;
 }
-
 /* BOTTONI */
 .btn {
     padding: 14px 40px;
@@ -81,7 +83,20 @@ header {
     z-index: 1000;
     height: 80px;
 }
-
+.ul-hidden a{
+    text-decoration: none;
+    color: var(--bg-main-white);
+    padding: 15px;
+    align-items: center;
+}
+.ul-hidden a:hover{
+    text-decoration: underline;
+}
+.ul-hidden .btn{
+    background-color: var(--bg-main-white);
+    color: var(--dark-color);
+    padding: 5px;
+}
 /* MAIN */
 .even {
     background-color: var(--bg-purple);
@@ -337,13 +352,13 @@ footer a{
     .container {
         max-width: 750px;
     }
-
     .d-flex {
         display: flex;
         justify-content: space-between;
         flex-flow: row wrap;
         gap: 10px;
     }
+   
 
     #intro .card {
         width: calc((100% / 3) - 10px);
@@ -365,7 +380,17 @@ footer a{
     .ul-hidden{
         display: block;
     }
-
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        gap: 10px;
+    }
+    .flex-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -376,6 +401,7 @@ footer a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     .card-img {
         width: 20%;
