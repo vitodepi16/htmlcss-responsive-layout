@@ -23,22 +23,21 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-ul {
-    list-style: none;
+.ul-hidden {
     display: none;
 }
+ul{
+    list-style: none;
+}
+.burger{
 
+}
 /* TOOLS */
 .container {
     padding: 15px;
     margin: 0 auto;
 }
 
-.d-flex {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
 .column{
  flex-flow: column wrap;
 }
@@ -120,13 +119,20 @@ main {
     color: var(--text-gray);
     text-align: left;
 }
-
+.card a i{
+    color: var(--bg-main-white);
+}
 .card i {
     font-size: 2.5rem;
     color: var(--bg-navbar);
     padding: 10px;
 }
+.box-text{
 
+}
+.box-img img{
+    width: 100%;
+}
 /* PLANNING */
 #planning {
     color: var(--bg-main-white);
@@ -346,10 +352,47 @@ footer a{
     #intro .card:first-child {
         width: calc((100% / 3 * 2) - 10px);
     }
+    #benefit .card-benefits{
+        width: calc(100% / 3 - 10px );
+    }
 
 }
+
+@media screen and (min-width: 992px){
+    .burger{
+        display: none;
+    }
+    .ul-hidden{
+        display: block;
+    }
+
+}
+
 @media screen and (min-width:1200px) {
     .container{
         width: 1100px;
+    }
+    .flex-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-img {
+        width: 20%;
+    }
+    .box-text{
+        width: 80%;
+    }
+    .box-text p, h5{
+        text-align: left;
+        font-size: .8rem;
+    }
+    .plan-left{
+        width: 60%;
+    }
+    .plan-right{
+        width: 40%;
+        margin-left: 20px;
+        margin-block-start: auto;
     }
 }
