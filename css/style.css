@@ -23,10 +23,10 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-/* li {
+li {
     list-style: none;
     display: none;
-} */
+}
 
 /* TOOLS */
 .container {
@@ -34,13 +34,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .d-flex {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    gap: 10px;
 }
-
 .text-center {
     text-align: center;
 }
@@ -67,7 +66,6 @@ p {
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: .2rem;
-
 }
 /* HEADER */
 header {
@@ -248,7 +246,41 @@ main {
     width: fit-content;
 
 }
+/* FREE TRIAL  */
+#free-trial span:first-child{
+    color: var(--text-gray);
+}
+#free-trial span:last-child{
+    color: var(--bg-main-white);
+    padding: 20px;
+}
+#free-trial a{
+    color: var(--bg-main-white);
 
+}
+#free-trial h3{
+    color: var(--bg-main-white);
+    font-size: 1.7rem;
+}
+#free-trial h2{
+    color: var(--text-gold);
+    font-size: 2rem;
+}
+#free-trial p{
+    color: var(--bg-main-white);
+    padding: 10px;
+}
+#free-trial .btn{
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    background-color: var(--bg-main-white);
+    color: var(--bg-purple);
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
 
 
 
@@ -263,10 +295,21 @@ footer {
 
 
 /* MEDIA */
-@media screen and (min-width:374px) {
-    li {
-        display: none;
+@media screen and (min-width:768px) {
+    .container{
+        max-width: 750px;
     }
-
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 10px;
+    }
+    #intro .card{
+        width: calc((100% / 3) - 10px );
+    }
+    #intro .card:first-child{
+        width: calc((100% / 3) - 10px );
+    }
 
 }
