@@ -31,15 +31,17 @@ li {
 /* TOOLS */
 .container {
     padding: 15px;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
-.d-flex {
+
+/* .d-flex {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     gap: 10px;
-}
+} */
+
 .text-center {
     text-align: center;
 }
@@ -58,15 +60,18 @@ p {
     display: block;
     width: fit-content;
 }
-.btn-blue{
+
+.btn-blue {
     background-color: var(--bg-navbar);
 }
-.btn-purple{
+
+.btn-purple {
     background-color: var(--bg-purple);
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: .2rem;
 }
+
 /* HEADER */
 header {
     background-color: var(--bg-navbar);
@@ -131,7 +136,8 @@ main {
 #planning img {
     width: 100%;
 }
-#planning h2{
+
+#planning h2 {
     text-align: left;
     margin-left: 10px;
     font-size: 2rem;
@@ -145,15 +151,16 @@ main {
     padding: 40px;
 }
 
-.developement img{
+.developement img {
     width: 100%;
 }
 
-.developement p{
+.developement p {
     line-height: 1.8rem;
     padding: 10px;
 }
-.developement h3{
+
+.developement h3 {
     font-size: 1rem;
     padding: 20px;
 }
@@ -163,37 +170,42 @@ main {
     padding: 10px 15px;
     border-radius: 50%;
 }
+
 /* PARTNER */
-#partner h3{
+#partner h3 {
     color: var(--bg-purple);
     font-size: 2rem;
     margin: 15px;
 }
-#partner h5{
+
+#partner h5 {
     font-size: 1.5rem;
-    letter-spacing:1.6px;
+    letter-spacing: 1.6px;
 
 }
-.card-partner{
+
+.card-partner {
     background-color: var(--bg-purple);
     border-radius: 40px;
     padding: 20px;
     color: var(--bg-main-white);
     margin: 30px;
 }
-.box-partner{
+
+.box-partner {
     display: inline-block;
     height: 100px;
     width: 100px;
     border-radius: 100%;
     text-align: center;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
-.box-partner img{
+
+.box-partner img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -205,72 +217,87 @@ main {
 
 /* BENEFITS */
 
-#benefit h2{
+#benefit h2 {
     color: var(--bg-main-white);
     padding: 50px;
 }
 
-.card-benefits{
+.card-benefits {
     background-color: var(--bg-main-white);
     color: var(--text-gray);
     border-radius: 40px;
     padding: 20px;
     margin-top: 40px;
 }
-.n-benefit{
-    font-size:  3rem;;
-   
+
+.n-benefit {
+    font-size: 3rem;
+    ;
+
 }
-.n-benefit, h3{
+
+.n-benefit,
+h3 {
     color: var(--bg-purple);
     padding: 5px;
     text-align: left;
 }
 
 /* PERSOLAN INFO */
-.personal-info{
+.personal-info {
     padding: 40px;
 }
-.personal-info h2{
+
+.personal-info h2 {
     color: var(--bg-purple);
     margin-left: 15px;
     padding: 10px;
 }
-.personal-info .box-partner{
+
+.personal-info .box-partner {
     margin-left: 15px;
 }
-.personal-info p{
+
+.personal-info p {
     word-spacing: 0.5rem;
 }
-.personal-info .btn{
+
+.personal-info .btn {
     width: fit-content;
 
 }
+
 /* FREE TRIAL  */
-#free-trial span:first-child{
+#free-trial span:first-child {
     color: var(--text-gray);
 }
-#free-trial span:last-child{
+
+#free-trial span:last-child {
     color: var(--bg-main-white);
     padding: 20px;
 }
-#free-trial a{
+
+#free-trial a {
     color: var(--bg-main-white);
 
 }
-#free-trial h3{
+
+#free-trial h3 {
     color: var(--bg-main-white);
     font-size: 1.7rem;
 }
-#free-trial h2{
+
+#free-trial h2 {
     color: var(--text-gold);
     font-size: 2rem;
 }
-#free-trial p{
+
+#free-trial p {
     color: var(--bg-main-white);
     padding: 10px;
 }
-#free-trial .btn{
+
+#free-trial .btn {
     text-align: center;
     font-size: 1.8rem;
     letter-spacing: .1rem;
@@ -279,7 +306,7 @@ main {
     border-radius: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
- 
+
 }
 
 
@@ -290,26 +317,40 @@ main {
 
 footer {
     background-color: var(--dark-color);
+    color: var(--bg-main-white);
+    padding: 50px;
+}
+footer a{
+    color: var(--bg-purple);
 }
 
 
 
 /* MEDIA */
 @media screen and (min-width:768px) {
-    .container{
+    .container {
         max-width: 750px;
     }
+
     .d-flex {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
+        flex-flow: row wrap;
         gap: 10px;
-    }
-    #intro .card{
-        width: calc((100% / 3) - 10px );
-    }
-    #intro .card:first-child{
-        width: calc((100% / 3) - 10px );
+        /* justify-content: center; */
     }
 
+    #intro .cnt-card {
+        width: calc((100% / 3) - 10px);
+    }
+
+    #intro .cnt-card:first-child {
+        width: calc((100% / 3 * 2) - 10px);
+    }
+
+}
+@media screen and (min-width:1200px) {
+    .container{
+        width: 1100px;
+    }
 }
